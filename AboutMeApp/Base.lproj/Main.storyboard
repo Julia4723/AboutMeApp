@@ -125,7 +125,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bXX-Xx-nfy"/>
-                        <color key="backgroundColor" red="0.77026879370000001" green="0.71864045580000002" blue="0.081070958870000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="FdY-Up-GqP" firstAttribute="leading" secondItem="bXX-Xx-nfy" secondAttribute="leading" constant="60" id="6XR-cJ-cut"/>
                             <constraint firstItem="bXX-Xx-nfy" firstAttribute="trailing" secondItem="FdY-Up-GqP" secondAttribute="trailing" constant="60" id="Tgm-fC-Ump"/>
@@ -134,7 +134,7 @@
                             <constraint firstItem="xYE-mN-CFf" firstAttribute="centerX" secondItem="gO6-lz-fpd" secondAttribute="centerX" id="yjt-cc-GHD"/>
                         </constraints>
                         <variation key="heightClass=regular-widthClass=compact">
-                            <color key="backgroundColor" red="0.92519664115646261" green="0.65470875850340138" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="1" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </variation>
                     </view>
                     <connections>
