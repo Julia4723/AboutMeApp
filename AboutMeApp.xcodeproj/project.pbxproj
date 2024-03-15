@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3440DE2B9DB04200F4B771 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3440DD2B9DB04200F4B771 /* AboutMeViewController.swift */; };
+		CE3440E12B9DBA4700F4B771 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3440E02B9DBA4700F4B771 /* User.swift */; };
+		CE3440E32B9E3E8500F4B771 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3440E22B9E3E8500F4B771 /* BioViewController.swift */; };
+		CE3440E62B9E3F1600F4B771 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3440E52B9E3F1600F4B771 /* TabBarViewController.swift */; };
 		CE68F0762B9B62C000BAADF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68F0752B9B62C000BAADF9 /* AppDelegate.swift */; };
 		CE68F0782B9B62C000BAADF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68F0772B9B62C000BAADF9 /* SceneDelegate.swift */; };
 		CE68F07A2B9B62C000BAADF9 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68F0792B9B62C000BAADF9 /* LogInViewController.swift */; };
 		CE68F07D2B9B62C000BAADF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE68F07B2B9B62C000BAADF9 /* Main.storyboard */; };
 		CE68F07F2B9B62C100BAADF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE68F07E2B9B62C100BAADF9 /* Assets.xcassets */; };
 		CE68F0822B9B62C100BAADF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE68F0802B9B62C100BAADF9 /* LaunchScreen.storyboard */; };
-		CE68F08A2B9B966800BAADF9 /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68F0892B9B966800BAADF9 /* LogOutViewController.swift */; };
+		CE68F08A2B9B966800BAADF9 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68F0892B9B966800BAADF9 /* WelcomeScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE3440DD2B9DB04200F4B771 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		CE3440E02B9DBA4700F4B771 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE3440E22B9E3E8500F4B771 /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
+		CE3440E52B9E3F1600F4B771 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		CE68F0722B9B62C000BAADF9 /* AboutMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE68F0752B9B62C000BAADF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE68F0772B9B62C000BAADF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +33,7 @@
 		CE68F07E2B9B62C100BAADF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE68F0812B9B62C100BAADF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE68F0832B9B62C100BAADF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE68F0892B9B966800BAADF9 /* LogOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
+		CE68F0892B9B966800BAADF9 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE3440DF2B9DB99500F4B771 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE3440E02B9DBA4700F4B771 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CE68F0692B9B62C000BAADF9 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +74,14 @@
 		CE68F0742B9B62C000BAADF9 /* AboutMeApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE3440DF2B9DB99500F4B771 /* Models */,
 				CE68F0752B9B62C000BAADF9 /* AppDelegate.swift */,
 				CE68F0772B9B62C000BAADF9 /* SceneDelegate.swift */,
 				CE68F0792B9B62C000BAADF9 /* LogInViewController.swift */,
-				CE68F0892B9B966800BAADF9 /* LogOutViewController.swift */,
+				CE68F0892B9B966800BAADF9 /* WelcomeScreenViewController.swift */,
+				CE3440E52B9E3F1600F4B771 /* TabBarViewController.swift */,
+				CE3440DD2B9DB04200F4B771 /* AboutMeViewController.swift */,
+				CE3440E22B9E3E8500F4B771 /* BioViewController.swift */,
 				CE68F07B2B9B62C000BAADF9 /* Main.storyboard */,
 				CE68F07E2B9B62C100BAADF9 /* Assets.xcassets */,
 				CE68F0802B9B62C100BAADF9 /* LaunchScreen.storyboard */,
@@ -141,9 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3440E62B9E3F1600F4B771 /* TabBarViewController.swift in Sources */,
+				CE3440E32B9E3E8500F4B771 /* BioViewController.swift in Sources */,
 				CE68F07A2B9B62C000BAADF9 /* LogInViewController.swift in Sources */,
+				CE3440DE2B9DB04200F4B771 /* AboutMeViewController.swift in Sources */,
+				CE3440E12B9DBA4700F4B771 /* User.swift in Sources */,
 				CE68F0762B9B62C000BAADF9 /* AppDelegate.swift in Sources */,
-				CE68F08A2B9B966800BAADF9 /* LogOutViewController.swift in Sources */,
+				CE68F08A2B9B966800BAADF9 /* WelcomeScreenViewController.swift in Sources */,
 				CE68F0782B9B62C000BAADF9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

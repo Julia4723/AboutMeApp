@@ -7,23 +7,25 @@
 
 import UIKit
 
-class AboutMeViewController: UIViewController {
-
+final class AboutMeViewController: UIViewController {
+    
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var surnameLabel: UILabel!
+    @IBOutlet var hobbyLabel: UILabel!
+    @IBOutlet var photoView: UIView!
+    
+    var user = User.getUser()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
+        nameLabel.text = user.persons.myName
+        surnameLabel.text = user.persons.surname
+        hobbyLabel.text = user.persons.hobby
+        
+        photoView.layer.cornerRadius = photoView.frame.width / 2
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

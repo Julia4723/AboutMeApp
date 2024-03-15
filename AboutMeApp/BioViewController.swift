@@ -8,22 +8,17 @@
 import UIKit
 
 class BioViewController: UIViewController {
+    
+    @IBOutlet var titleItem: UILabel!
+    @IBOutlet var descriptionBio: UILabel!
+    
+    var user = User.getUser()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleItem.text = "\(user.persons.myName) \(user.persons.surname)"
+        descriptionBio.text = user.persons.description
 
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

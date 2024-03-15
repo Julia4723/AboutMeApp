@@ -13,14 +13,18 @@ import UIKit
 
 final class WelcomeScreenViewController: UIViewController {
     
-    @IBOutlet var userNameLabel: UILabel!
     
-    var userName: String! //Создаем свойства для экземпляра класса
-
+    @IBOutlet var userNameLabel: UILabel!
+    @IBOutlet var myNameLabel: UILabel!
+    
+    var user = User.getUser()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        userNameLabel.text = userName //Здесь передаем имя юзера в лейбл на экран log out
-
+        
+         
+        userNameLabel.text = "Welcome \(user.name)"
+        myNameLabel.text = "My name is \(user.persons.myName)"
     }
     
     @IBAction func logOutButton() {
