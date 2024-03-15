@@ -29,9 +29,7 @@ final class LogInViewController: UIViewController {
     private var defaultUserName: String = "Name"
     private var defaultUserPassword: String = "1111"
     
-    //private var user = User.getUser()
-    
-    let user = User.getUser()
+    private var user = User.getUser()
     
     override func viewDidLoad() {
          super.viewDidLoad()
@@ -80,7 +78,7 @@ final class LogInViewController: UIViewController {
 
                 aboutMeVC.view.backgroundColor = .clear
                 
-            } 
+            }
         }
     }
  
